@@ -1,6 +1,6 @@
 # Aplikacja do nauki matematyki
 
-Aplikacja stworzona w ramach pisania pracy licencjackiej pt. "Homeschooling - tworzenie aplikacji wspomagającej nauczanie domowe matematyki na poziomie podstawowym"
+Aplikacja stworzona w ramach pisania pracy licencjackiej pt. "Homeschooling - implementacja aplikacji wspomagającej nauczanie domowe matematyki na poziomie podstawowym".
 
 Program pozwala uczniowi na rozwiązywanie zadań z zakresu ułamków na poziomie 4/5 klasy podstawówki. Zapewnia także wskazówki na podstawie jego poprzednich odpowiedzi oraz podpowiedzi dedykowane do konretnego zadania.
 
