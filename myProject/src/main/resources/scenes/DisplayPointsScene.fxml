@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackpane" prefHeight="650.0" prefWidth="1300.0" stylesheets="/stylesheets/displayPointsStylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayPointsController">
+    <ImageView>
+        <Image url="file:src/main/resources/background.jpg" />
+    </ImageView>
+    <AnchorPane fx:id="mainPane" prefHeight="300.0" prefWidth="400.0" StackPane.alignment="CENTER">
+        <StackPane.margin>
+            <Insets bottom="20" left="100.0" right="100.0" top="20" />
+        </StackPane.margin>
+        <Button fx:id="returnButton" mnemonicParsing="false" onMouseClicked="#returnToMain" text="Powrót" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0" />
+        <Label fx:id="sumOfPoints" text="Suma punktów:" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="20.0" />
+      <Label fx:id="pointsLabel1" layoutX="307.0" layoutY="151.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel2" layoutX="307.0" layoutY="232.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel3" layoutX="307.0" layoutY="320.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel4" layoutX="307.0" layoutY="411.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel5" layoutX="307.0" layoutY="497.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel6" layoutX="713.0" layoutY="151.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel7" layoutX="713.0" layoutY="232.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel8" layoutX="713.0" layoutY="320.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel9" layoutX="713.0" layoutY="411.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel10" layoutX="713.0" layoutY="497.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel11" layoutX="1045.0" layoutY="151.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel12" layoutX="1045.0" layoutY="232.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel13" layoutX="1045.0" layoutY="320.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel14" layoutX="1045.0" layoutY="411.0" styleClass="point" text="1" />
+      <Label fx:id="pointsLabel15" layoutX="1045.0" layoutY="497.0" styleClass="point" text="1" />
+      <Label fx:id="titleLabel1" layoutX="79.0" layoutY="159.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel2" layoutX="79.0" layoutY="240.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel3" layoutX="79.0" layoutY="328.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel4" layoutX="79.0" layoutY="419.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel5" layoutX="79.0" layoutY="505.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel6" layoutX="460.0" layoutY="159.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel7" layoutX="460.0" layoutY="240.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel8" layoutX="460.0" layoutY="328.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel9" layoutX="460.0" layoutY="419.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel10" layoutX="460.0" layoutY="505.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel11" layoutX="824.0" layoutY="159.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel12" layoutX="824.0" layoutY="328.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel13" layoutX="824.0" layoutY="240.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel14" layoutX="824.0" layoutY="419.0" styleClass="title" text="1" />
+      <Label fx:id="titleLabel15" layoutX="824.0" layoutY="505.0" styleClass="title" text="1" />
+    </AnchorPane>
+</StackPane>

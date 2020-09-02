@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackpane" prefHeight="650.0" prefWidth="1300.0" stylesheets="/stylesheets/mainStylesheet.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+    <ImageView>
+      <Image url="file:src/main/resources/background.jpg" />
+    </ImageView>
+    <AnchorPane fx:id="anchorpane" prefHeight="300.0" prefWidth="400.0" StackPane.alignment="CENTER">
+      <StackPane.margin>
+         <Insets bottom="20" left="100.0" right="100.0" top="20" />
+      </StackPane.margin>
+        <ImageView fitHeight="230.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="310.0">
+            <Image url="file:src/main/resources/boy.png" />
+        </ImageView>
+        <AnchorPane prefHeight="373.0" prefWidth="361.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="20.0">
+            <ImageView fitHeight="373.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="file:src/main/resources/balloon.png" />
+            </ImageView>
+            <Label fx:id="helloLabel" contentDisplay="CENTER" text="Cześć!" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="50.0" />
+            <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" maxWidth="300.0" prefHeight="15.0" prefWidth="300.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="100.0" />
+        </AnchorPane>
+        <TitledPane fx:id="toDoExcercisesPane" animated="false" prefHeight="500.0" prefWidth="300.0" text="Zadania do wykonania" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="80.0">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="300.0">
+                  <children>
+                     <ListView fx:id="toDoExcercises" onMouseClicked="#chooseExcercise" prefHeight="470.0" prefWidth="300.0" />
+                  </children>
+               </AnchorPane>
+           </content>
+            <effect>
+               <InnerShadow color="#ff6347" />
+            </effect>
+         </TitledPane>
+        <TitledPane fx:id="finishedExcercisesPane" animated="false" maxHeight="500.0" maxWidth="300.0" prefHeight="500.0" prefWidth="300.0" text="Wykonane zadania" AnchorPane.leftAnchor="800.0" AnchorPane.topAnchor="80.0">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="300.0">
+                  <children>
+                     <ListView fx:id="finishedExcercises" onMouseClicked="#chooseFinishedExcercise" prefHeight="470.0" prefWidth="300.0" />
+                  </children>
+               </AnchorPane>
+           </content>
+            <effect>
+               <InnerShadow color="#32cd32" />
+            </effect>
+         </TitledPane>
+        <Button fx:id="changeNameButton" mnemonicParsing="false" onMouseClicked="#changeName" text="Zmień imię" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="550.0" />
+        <Button fx:id="displayPointsButton" mnemonicParsing="false" onMouseClicked="#displayPoints" text="Moje Punkty" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="550.0" />
+        <AnchorPane fx:id="enterNamePane" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="350.0" StackPane.alignment="CENTER">
+            <children>
+                <Label fx:id="enterNameLabel" alignment="TOP_LEFT" text="Podaj swoje imię:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0" />
+                <TextField fx:id="enterNameText" alignment="CENTER" prefHeight="18.0" prefWidth="170.0" promptText="Imię..." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+                <Button fx:id="enterNameButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onMouseClicked="#enterName" text="OK" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="100.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="changeNamePane" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="350.0" StackPane.alignment="CENTER">
+            <children>
+                <Label fx:id="changeNameLabel" alignment="TOP_LEFT" text="Podaj swoje imię:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0" />
+                <TextField fx:id="changeNameText" alignment="CENTER" prefHeight="18.0" prefWidth="170.0" promptText="Imię..." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+                <Button fx:id="changeNameSaveButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onMouseClicked="#changeNameSave" text="OK" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0" />
+                <Button fx:id="changeNameCancelButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onMouseClicked="#changeNameCancel" text="Anuluj" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="alreadyFinishedPane" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="350.0" StackPane.alignment="CENTER">
+            <children>
+                <Label fx:id="alreadyFinishedLabel" alignment="TOP_LEFT" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0" />
+                <Button fx:id="alreadyFinishedButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onMouseClicked="#finishedExerciseOK" text="OK" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="95.0" />
+            </children>
+        </AnchorPane>
+    </AnchorPane>
+</StackPane>

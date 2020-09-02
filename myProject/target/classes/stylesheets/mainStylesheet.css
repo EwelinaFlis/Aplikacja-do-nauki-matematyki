@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext');
+
+#stackpane{
+    -fx-font-family: 'Pacifico', cursive;
+}
+
+#anchorpane {
+    -fx-background-color: rgba(255, 255, 255, .7);
+    -fx-smooth: true;
+    -fx-background-radius: 20px;
+    -fx-border-color: #87ceeb;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+}
+
+#helloLabel {
+    -fx-font-size: 44px;
+    -fx-text-fill:  #4682b4;
+}
+
+#nameLabel {
+    -fx-font-size: 44px;
+    -fx-text-fill:  #4682b4;
+}
+
+#toDoExcercisesPane {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ff6347;
+}
+
+#toDoExcercisesPane:hover {
+    -fx-text-fill: #ffffff;
+}
+
+#toDoExcercisesPane .title {
+    -fx-background-color: #ffffff;
+}
+
+#toDoExcercisesPane:hover .title {
+    -fx-background-color: #ff6347;
+}
+
+#toDoExcercises {
+    -fx-font-size: 20px;
+}
+
+#toDoExcercisesCell:filled:selected, #toDoExcercisesCell:filled:selected:focused {
+    -fx-background-color: #adff2f
+}
+
+#finishedExcercisesPane {
+    -fx-font-size: 24px;
+    -fx-text-fill: #32cd32;
+}
+
+#finishedExcercisesPane .title {
+    -fx-background-color: #ffffff;
+}
+
+#finishedExcercisesPane:hover {
+    -fx-text-fill: #ffffff;
+}
+
+#finishedExcercisesPane:hover .title {
+    -fx-background-color: #32cd32;
+}
+
+#finishedExcercises {
+    -fx-font-size: 20px;
+}
+
+#finishedExcercises:filled:selected {
+    -fx-background-color: #adff2f
+}
+
+#enterNamePane {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #4682b4;
+}
+
+#enterNameLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #4682b4;
+}
+
+#enterNameText {
+    -fx-font-size: 18px;
+    -fx-text-fill: #87ceeb;
+}
+
+#changeNameButton {
+    -fx-font-size: 22px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #87ceeb;
+    -fx-border-color: black;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+#changeNameButton: hover {
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+#displayPointsButton {
+    -fx-font-size: 22px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #87ceeb;
+    -fx-border-color: black;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+#displayPointsButton: hover {
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+#changeNamePane {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #4682b4;
+}
+
+#changeNameLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #4682b4;
+}
+
+#changeNameText {
+    -fx-font-size: 18px;
+    -fx-text-fill: #87ceeb;
+}
+
+#alreadyFinishedPane {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #4682b4;
+}
+
+#alreadyFinishedLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #4682b4;
+}

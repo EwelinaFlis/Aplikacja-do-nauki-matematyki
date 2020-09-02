@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext');
+
+#stackpane{
+    -fx-font-family: 'Pacifico', cursive;
+}
+
+#mainPane {
+    -fx-background-color: rgba(255, 255, 255, .8);
+    -fx-smooth: true;
+    -fx-background-radius: 20px;
+    -fx-border-color: #87ceeb;
+    -fx-border-width: 5px;
+    -fx-border-radius: 15px;
+}
+
+#title {
+    -fx-font-size: 32px;
+}
+
+#excerciseTextArea {
+    -fx-font-size: 24px;
+    -fx-border-width: 3px;
+    -fx-border-color: #87ceeb;
+}
+
+#points {
+    -fx-font-size: 22px;
+}
+
+#result {
+    -fx-border-color: #87ceeb;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 16px;
+}
+
+#answer {
+    -fx-font-size: 22px;
+}
+
+#returnButton {
+    -fx-font-size: 22px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #87ceeb;
+    -fx-border-color: black;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+
+}
+
+#returnButton: hover {
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+#checkAnswerButton {
+    -fx-font-size: 18px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #87ceeb;
+    -fx-border-color: black;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+
+}
+
+#checkAnswerButton: hover {
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+#clueLabel {
+    -fx-font-size: 22px;
+}

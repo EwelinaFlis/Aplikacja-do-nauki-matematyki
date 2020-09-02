@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+#stackpane{
+    -fx-font-family: 'Pacifico', cursive;
+}
+
+#mainPane {
+    -fx-background-color: rgba(255, 255, 255, .7);
+    -fx-smooth: true;
+    -fx-background-radius: 20px;
+    -fx-border-color: #87ceeb;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+}
+
+#returnButton {
+    -fx-font-size: 22px;
+    -fx-background-radius: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #87ceeb;
+    -fx-border-color: black;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+
+}
+
+#returnButton: hover {
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+#sumOfPoints {
+    -fx-font-size: 30px;
+    -fx-text-fill: #4682b4;
+}
+
+.point {
+    -fx-text-fill: #ff6347;
+    -fx-font-size: 40px;
+    -fx-font-family: 'Holtwood One SC', serif;
+    -fx-background-color: rgba(255, 255, 255, .3);
+    -fx-background-radius: 5px;
+
+}
+
+.title {
+    -fx-text-fill: #4682b4;
+    -fx-font-size: 24px;
+}
+
